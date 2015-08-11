@@ -13,11 +13,11 @@
         {
             //Arrange
             $test_Anagram = new Anagram;
-            $input = "on";
-            //$input_list = array("no","as");
+            $input_word = "on";
+            $input_list = array("no","as");
 
             //Act
-            $result = $test_Anagram->checkAnagram($input);
+            $result = $test_Anagram->checkAnagram($input_word, $input_list);
 
             //Assert
             $this->assertEquals(array("no"), $result);
