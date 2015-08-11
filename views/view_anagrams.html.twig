@@ -5,12 +5,16 @@
     </head>
     <body>
         <div class="container">
-            <h1>Here are your anagrams for {{ word }}:</h1>
-            <ul class="unstyled">
-                {% for anagram in anagrams %}
-                    <h4>{{ anagram }}</h4>
-                {% endfor %}
-            </ul>
+            {% if anagrams is not empty %}
+                <h1>Here are your anagrams for {{ word }}:</h1>
+                <ul class="unstyled">
+                    {% for anagram in anagrams %}
+                        <h4>{{ anagram }}</h4>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <h1>Sorry no anagrams were found</h1>
+            {% endif %}
             <h1>Here's what wasn't an anagram:</h1>
             <ul class="unstyled">
                 {% for fail in fails %}
