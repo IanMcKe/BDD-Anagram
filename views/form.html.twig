@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Check if you have an anagram!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Please enter a word, and a list of potential anagrams to check against:</h1>
+            <form action="/view_anagrams">
+                <div class="form-group">
+                    <label for="word">Enter your word:</label>
+                    <input id="word" name="word" class="form-control" type="text">
+                    <label for="anagram_list">Enter your list of potential anagrams (be sure to add a comma and a space after each word):</label>
+                    <input id="anagram_list" name="anagram_list" class="form-control" type="text">
+                </div>
+                <button type="submit" class="btn-success">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

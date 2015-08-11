@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Anagrams!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Here are your anagrams for {{ word }}:</h1>
+            <ul class="unstyled">
+                {% for anagram in anagrams %}
+                    <h4>{{ anagram }}</h4>
+                {% endfor %}
+            </ul>
+            <h1>Here's what wasn't an anagram:</h1>
+            <ul class="unstyled">
+                {% for fail in fails %}
+                    <h4>{{ fail }}</h4>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
