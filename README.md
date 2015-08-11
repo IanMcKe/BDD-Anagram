@@ -1,4 +1,4 @@
-## Anagram app built with BBD methodology
+## Anagram app built with BDD methodology
 
 ## Ian McKenney and Don Schemmel
 
